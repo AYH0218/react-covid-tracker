@@ -5,7 +5,7 @@ import Title from '../components/Title';
 
 const WorldPage = (props) => {
   return (
-    <div>
+    <div className="world-page-container">
       <Header />
       <Title />
       <Cards allCountriesData={props.allCountriesData} />
