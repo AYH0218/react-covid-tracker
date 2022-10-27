@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(250.6deg, #6a70ff 7.3%, rgba(255, 53, 53, 0.4) 98.63%);
   background-size: 400% 400%;
+  -webkit-animation: gradient 12s ease infinite;
   animation: gradient 12s ease infinite;
 }
 
@@ -23,6 +24,7 @@ body {
   padding: 4rem 3rem;
   background: linear-gradient(250.6deg, #6a70ff 7.3%, rgba(255, 53, 53, 0.4) 98.63%);
   background-size: 300% 300%;
+  -webkit-animation: gradient 14s ease infinite;
   animation: gradient 14s ease infinite;
 }
 
@@ -37,7 +39,7 @@ body {
   backdrop-filter: blur(5px);
   width: 100%;
   padding: 0.6rem 0;
-  background: hsla(0, 0%, 100%, 0.25);
+  background: hsla(0deg, 0%, 100%, 0.25);
   a {
     color: #444;
     text-decoration: none;
@@ -96,20 +98,46 @@ body {
   min-height: 300px;
   padding: 1rem;
   border-radius: 40px;
-  background: hsla(0, 0%, 100%, 0.3);
+  background: hsla(0deg, 0%, 100%, 0.3);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  box-shadow: 4px 4px 13px 5px rgb(0 0 0 / 25%);
-  p {
-    color: #333;
-    font-weight: bold;
-    span {
-      font-size: 1.5rem;
-      color: #7733ff;
-      margin-left: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.1rem;
-    }
+  box-shadow: 4px 4px 13px 5px rgba(0, 0, 0, 0.25);
+}
+.results-container p {
+  color: #333;
+  font-weight: bold;
+}
+.results-container p span {
+  font-size: 1.5rem;
+  color: #7733ff;
+  margin-left: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .title-h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .selector-container {
+    margin: 2rem 0;
+  }
+  .selector-container > select {
+    width: 208px;
+  }
+  .selector-container > button {
+    width: 89px;
+    padding: 0rem 0.5rem;
+  }
+  .results-container {
+    width: 270px;
+  }
+  .results-container p span {
+    font-size: 1.5rem;
   }
 }
 
@@ -126,10 +154,10 @@ body {
   justify-content: center;
   padding: 0.5rem 2rem;
   border-radius: 40px;
-  background: hsla(0, 0%, 100%, 0.3);
+  background: hsla(0deg, 0%, 100%, 0.3);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  box-shadow: 4px 4px 13px 5px rgb(0 0 0 / 25%);
+  box-shadow: 4px 4px 13px 5px rgba(0, 0, 0, 0.25);
   h2 {
     font-weight: 500;
     text-align: center;

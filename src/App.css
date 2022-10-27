@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', 'Noto Sans JP', sans-serif;
+  font-family: "Raleway", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-display: swap;
   color: #333;
@@ -53,7 +53,7 @@ body {
 .title-h1 {
   margin: 0;
   padding-top: 3rem;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: center;
   font-weight: 400;
   font-size: 3rem;
@@ -103,10 +103,12 @@ body {
   backdrop-filter: blur(20px);
   box-shadow: 4px 4px 13px 5px rgba(0, 0, 0, 0.25);
 }
+
 .results-container p {
   color: #333;
   font-weight: bold;
 }
+
 .results-container p span {
   font-size: 1.5rem;
   color: #7733ff;
@@ -122,7 +124,6 @@ body {
     line-height: 3.5rem;
     letter-spacing: 0.5rem;
   }
-
   .selector-container {
     margin: 2rem 0;
   }
@@ -140,7 +141,6 @@ body {
     font-size: 1.5rem;
   }
 }
-
 .card-container {
   margin-top: 4rem;
   display: grid;
@@ -168,4 +168,4 @@ body {
   color: #3344ff;
   margin-left: 4px;
   font-weight: 600;
-} /*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
