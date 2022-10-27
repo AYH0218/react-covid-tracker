@@ -1,7 +1,7 @@
-const Cards = (props) => {
+const Cards = ({ allCountriesData }) => {
   return (
     <div className="card-container">
-      {props.allCountriesData.map((singleData, index) => (
+      {allCountriesData.map((singleData, index) => (
         <div className="card" key={index}>
           <div>
             <h2>{singleData.Country}</h2>

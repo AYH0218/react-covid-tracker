@@ -3,12 +3,12 @@ import Cards from '../components/Cards';
 import Header from '../components/Header';
 import Title from '../components/Title';
 
-const WorldPage = (props) => {
+const WorldPage = ({ allCountriesData }) => {
   return (
     <div className="world-page-container">
       <Header />
       <Title />
-      <Cards allCountriesData={props.allCountriesData} />
+      <Cards allCountriesData={allCountriesData} />
     </div>
   );
 };
